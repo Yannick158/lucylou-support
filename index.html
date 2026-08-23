@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucy Lou — Support</title>
+<meta name="description" content="Hilfe und Kontakt für die iPhone-App Lucy Lou.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #14161a; --muted: #5b6068;
+    --surface: #f4f5f7; --line: #e3e5e9; --accent: #14161a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --fg: #f2f3f5; --muted: #9aa0a8;
+      --surface: #131417; --line: #24262b; --accent: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 20px 80px;
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.6 ui-rounded, -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Helvetica Neue", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  header { padding: 64px 0 8px; }
+  h1 { font-size: 34px; line-height: 1.15; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 40px; font-size: 17px; }
+  h2 { font-size: 22px; font-weight: 600; margin: 44px 0 14px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; font-weight: 600; margin: 26px 0 6px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 16px; padding: 20px 22px; margin: 0 0 16px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .contact { font-size: 19px; font-weight: 600; }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 15px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Lucy Lou — Support</h1>
+  <p class="sub">Hilfe, Fragen und Fehlermeldungen zur iPhone-App.</p>
+</header>
+
+<div class="card">
+  <p class="contact"><a href="mailto:yannik.sauerwein@gmail.com">yannik.sauerwein@gmail.com</a></p>
+  <p style="color:var(--muted); margin-top:6px;">Schreib mir bei Fragen, Fehlern oder Wünschen — ich antworte in der Regel innerhalb weniger Tage. Auch „das habe ich nicht verstanden“ ist wertvolles Feedback.</p>
+</div>
+
+<h2>Häufige Fragen</h2>
+
+<h3>Warum braucht Lucy Lou die Bildschirmzeit-Berechtigung?</h3>
+<p>Apple erlaubt das Sperren von Apps ausschließlich über das System „Family Controls“. Ohne diese Freigabe kann Lucy Lou keine einzige App sperren. Die App erfährt dabei nie, welche Apps du hast — Apple übergibt nur anonyme Platzhalter.</p>
+
+<h3>Meine Apps werden nicht gesperrt</h3>
+<p>Prüfe zuerst deinen Modus unter <em>Einstellungen → Strictness</em>:</p>
+<p><strong>Fokus-Modus</strong> sperrt nur, solange dein verknüpfter iOS-Fokus eingeschaltet ist. Ist kein Fokus mit Lucy Lou verknüpft, bleibt die Block-Liste inaktiv — die Anleitung dazu findest du unter <em>Einstellungen → Set up Focus Mode</em>.</p>
+<p><strong>Super-Fokus</strong> sperrt immer, unabhängig vom iOS-Fokus.</p>
+
+<h3>Die Berechtigung wird nicht erkannt</h3>
+<p>Öffne <em>Einstellungen → Debug → Berechtigungs-Diagnose</em>, tippe auf „Diagnose starten“ und schick mir anschließend das Protokoll über „Protokoll teilen“ per Mail. Darin steht, was iOS genau zurückmeldet.</p>
+
+<h3>Wie entsperre ich eine App kurzfristig?</h3>
+<p>Starte eine Fokus-Session: Du beantwortest optional zwei kurze Fragen, wählst aus, was geöffnet werden soll, und legst eine Dauer fest. Nach Ablauf sperrt Lucy Lou automatisch wieder.</p>
+
+<h3>Wie lösche ich meine Daten?</h3>
+<p>Lucy Lou speichert alles ausschließlich auf deinem iPhone. Löschst du die App, sind alle Daten vollständig entfernt. Es gibt keine Accounts und keine Server.</p>
+
+<h3>Ich bin Beta-Tester — wie melde ich einen Fehler?</h3>
+<p>Am schnellsten direkt aus TestFlight heraus: iPhone schütteln, Screenshot markieren, kurz beschreiben. Alternativ per Mail an die Adresse oben.</p>
+
+<footer>
+  <p><a href="privacy.html">Datenschutzerklärung</a></p>
+  <p>Lucy Lou · Yannik Sauerwein</p>
+</footer>
+
+</div>
+</body>
+</html>
